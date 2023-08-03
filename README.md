@@ -1,4 +1,4 @@
-# IT511SteppingStone4
+# IT511 Stepping Stone 4
 
 Prompt: In this lab, you will write a short Java application that uses a loop control structure. Specifically, your application should accomplish the following: <br>
  Create an ArrayList<String> to store the list of ingredient names added by the user. <br>
