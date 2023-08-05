@@ -25,7 +25,15 @@ public class SteppingStone4_Loops {
        do {           
            System.out.println("Would you like to enter an ingredient: (y or n)");
            String reply = scnr.next().toLowerCase();
-           
+           scnr.nextLine();
+           if(reply.equals("y")){
+                System.out.println("Enter new Ingredient:");
+                newIngredient = scnr.nextLine();
+                ingredientList.add(newIngredient);
+           }else{
+                addMoreIngredients=false;
+                break;
+           }
            /**
             * Add your code here (branches work well!).  The code should check the
             * reply:
@@ -45,11 +53,8 @@ public class SteppingStone4_Loops {
 		   *	and assigning it to the String ingredient
 		   *
 		   */
-		   String ingredient = ???;
+		   String ingredient = ingredientList.get(i);
            System.out.println(ingredient);
        }
     }
 }
-
-
-
