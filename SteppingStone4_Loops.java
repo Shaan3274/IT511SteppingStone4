@@ -36,6 +36,15 @@ public class SteppingStone4_Loops {
             *   anything else --> prompt for a "y" or "n"
             * 
             */
+            scnr.nextLine();
+           if(reply.equals("y")){
+                System.out.println("Enter new Ingredient:");
+                newIngredient = scnr.nextLine();
+                ingredientList.add(newIngredient);
+           }else{
+                addMoreIngredients=false;
+                break;
+           }
             
        } while (addMoreIngredients);
        
@@ -45,11 +54,8 @@ public class SteppingStone4_Loops {
 		   *	and assigning it to the String ingredient
 		   *
 		   */
-		   String ingredient = ???;
+		   String ingredient = ingredientList.get(i);
            System.out.println(ingredient);
        }
     }
 }
-
-
-
